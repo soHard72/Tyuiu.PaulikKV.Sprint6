@@ -76,7 +76,7 @@ namespace Tyuiu.PaulikKV.Sprint6.Task0.V9
             this.pictureBoxFormula_PKV.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFormula_PKV.Image")));
             this.pictureBoxFormula_PKV.Location = new System.Drawing.Point(507, 29);
             this.pictureBoxFormula_PKV.Name = "pictureBoxFormula_PKV";
-            this.pictureBoxFormula_PKV.Size = new System.Drawing.Size(115, 65);
+            this.pictureBoxFormula_PKV.Size = new System.Drawing.Size(99, 57);
             this.pictureBoxFormula_PKV.TabIndex = 5;
             this.pictureBoxFormula_PKV.TabStop = false;
             this.pictureBoxFormula_PKV.Click += new System.EventHandler(this.pictureBoxFormula_PKV_Click);
