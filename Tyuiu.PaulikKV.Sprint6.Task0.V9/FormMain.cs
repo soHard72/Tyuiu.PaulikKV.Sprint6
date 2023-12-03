@@ -42,7 +42,7 @@ namespace Tyuiu.PaulikKV.Sprint6.Task0.V9
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonHelp_PKV_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Таск 0 выполнил студент группы АСОиУб-23-3 Паулик Кирилл Владимирович", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
