@@ -32,6 +32,7 @@ namespace Tyuiu.PaulikKV.Sprint6.Task0.V9
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.groupBoxCondition_PKV = new System.Windows.Forms.GroupBox();
+            this.textBoxTask_PKV = new System.Windows.Forms.TextBox();
             this.pictureBoxFormula_PKV = new System.Windows.Forms.PictureBox();
             this.groupBoxCondition2_PKV = new System.Windows.Forms.GroupBox();
             this.textBoxVarX_PKV = new System.Windows.Forms.TextBox();
@@ -41,7 +42,6 @@ namespace Tyuiu.PaulikKV.Sprint6.Task0.V9
             this.textBoxResult_PKV = new System.Windows.Forms.TextBox();
             this.buttonDone_PKV = new System.Windows.Forms.Button();
             this.buttonHelp_PKV = new System.Windows.Forms.Button();
-            this.textBoxTask_PKV = new System.Windows.Forms.TextBox();
             this.groupBoxCondition_PKV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFormula_PKV)).BeginInit();
             this.groupBoxCondition2_PKV.SuspendLayout();
@@ -58,6 +58,18 @@ namespace Tyuiu.PaulikKV.Sprint6.Task0.V9
             this.groupBoxCondition_PKV.TabIndex = 0;
             this.groupBoxCondition_PKV.TabStop = false;
             this.groupBoxCondition_PKV.Text = "Условие";
+            this.groupBoxCondition_PKV.Enter += new System.EventHandler(this.groupBoxCondition_PKV_Enter);
+            // 
+            // textBoxTask_PKV
+            // 
+            this.textBoxTask_PKV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxTask_PKV.Location = new System.Drawing.Point(6, 19);
+            this.textBoxTask_PKV.Multiline = true;
+            this.textBoxTask_PKV.Name = "textBoxTask_PKV";
+            this.textBoxTask_PKV.ReadOnly = true;
+            this.textBoxTask_PKV.Size = new System.Drawing.Size(495, 158);
+            this.textBoxTask_PKV.TabIndex = 6;
+            this.textBoxTask_PKV.Text = "Вычислить выражение по формуле\r\n";
             // 
             // pictureBoxFormula_PKV
             // 
@@ -67,6 +79,7 @@ namespace Tyuiu.PaulikKV.Sprint6.Task0.V9
             this.pictureBoxFormula_PKV.Size = new System.Drawing.Size(115, 65);
             this.pictureBoxFormula_PKV.TabIndex = 5;
             this.pictureBoxFormula_PKV.TabStop = false;
+            this.pictureBoxFormula_PKV.Click += new System.EventHandler(this.pictureBoxFormula_PKV_Click);
             // 
             // groupBoxCondition2_PKV
             // 
@@ -78,6 +91,7 @@ namespace Tyuiu.PaulikKV.Sprint6.Task0.V9
             this.groupBoxCondition2_PKV.TabIndex = 1;
             this.groupBoxCondition2_PKV.TabStop = false;
             this.groupBoxCondition2_PKV.Text = "Ввод данных";
+            this.groupBoxCondition2_PKV.Enter += new System.EventHandler(this.groupBoxCondition2_PKV_Enter);
             // 
             // textBoxVarX_PKV
             // 
@@ -85,6 +99,7 @@ namespace Tyuiu.PaulikKV.Sprint6.Task0.V9
             this.textBoxVarX_PKV.Name = "textBoxVarX_PKV";
             this.textBoxVarX_PKV.Size = new System.Drawing.Size(100, 20);
             this.textBoxVarX_PKV.TabIndex = 1;
+            this.textBoxVarX_PKV.TextChanged += new System.EventHandler(this.textBoxVarX_PKV_TextChanged);
             this.textBoxVarX_PKV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxVarX_PKV_KeyPress);
             // 
             // labelVarC_PKV
@@ -107,6 +122,7 @@ namespace Tyuiu.PaulikKV.Sprint6.Task0.V9
             this.groupBoxCondition3_PKV.TabIndex = 2;
             this.groupBoxCondition3_PKV.TabStop = false;
             this.groupBoxCondition3_PKV.Text = "Вывод данных";
+            this.groupBoxCondition3_PKV.Enter += new System.EventHandler(this.groupBoxCondition3_PKV_Enter);
             // 
             // labelVarB_PKV
             // 
@@ -116,6 +132,7 @@ namespace Tyuiu.PaulikKV.Sprint6.Task0.V9
             this.labelVarB_PKV.Size = new System.Drawing.Size(62, 13);
             this.labelVarB_PKV.TabIndex = 1;
             this.labelVarB_PKV.Text = "Результат:";
+            this.labelVarB_PKV.Click += new System.EventHandler(this.labelVarB_PKV_Click);
             // 
             // textBoxResult_PKV
             // 
@@ -153,17 +170,6 @@ namespace Tyuiu.PaulikKV.Sprint6.Task0.V9
             this.buttonHelp_PKV.Text = "?";
             this.buttonHelp_PKV.UseVisualStyleBackColor = false;
             this.buttonHelp_PKV.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBoxTask_PKV
-            // 
-            this.textBoxTask_PKV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxTask_PKV.Location = new System.Drawing.Point(6, 19);
-            this.textBoxTask_PKV.Multiline = true;
-            this.textBoxTask_PKV.Name = "textBoxTask_PKV";
-            this.textBoxTask_PKV.ReadOnly = true;
-            this.textBoxTask_PKV.Size = new System.Drawing.Size(495, 158);
-            this.textBoxTask_PKV.TabIndex = 6;
-            this.textBoxTask_PKV.Text = "Вычислить выражение по формуле\r\n";
             // 
             // FormMain
             // 

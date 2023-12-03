@@ -42,7 +42,7 @@ namespace Tyuiu.PaulikKV.Sprint6.Task0.V9
             }
         }
 
-        private void buttonHelp_PKV_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Таск 0 выполнил студент группы АСОиУб-23-3 Паулик Кирилл Владимирович", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -56,6 +56,36 @@ namespace Tyuiu.PaulikKV.Sprint6.Task0.V9
         }
 
         private void labelVarC_PKV_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBoxCondition_PKV_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBoxCondition2_PKV_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBoxCondition3_PKV_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxVarX_PKV_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelVarB_PKV_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxFormula_PKV_Click(object sender, EventArgs e)
         {
 
         }
