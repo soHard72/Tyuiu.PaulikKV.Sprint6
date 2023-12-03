@@ -68,10 +68,13 @@ namespace Tyuiu.PaulikKV.Sprint6.Task3.V8
             // dataGridViewResult_PKV
             // 
             this.dataGridViewResult_PKV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewResult_PKV.ColumnHeadersVisible = false;
             this.dataGridViewResult_PKV.Location = new System.Drawing.Point(368, 9);
             this.dataGridViewResult_PKV.Name = "dataGridViewResult_PKV";
+            this.dataGridViewResult_PKV.RowHeadersVisible = false;
             this.dataGridViewResult_PKV.Size = new System.Drawing.Size(240, 250);
             this.dataGridViewResult_PKV.TabIndex = 1;
+            this.dataGridViewResult_PKV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewResult_PKV_CellContentClick);
             // 
             // groupBoxOutput_PKV
             // 

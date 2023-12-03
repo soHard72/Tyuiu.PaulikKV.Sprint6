@@ -82,5 +82,10 @@ namespace Tyuiu.PaulikKV.Sprint6.Task3.V8
                 }
             }
         }
+
+        private void dataGridViewResult_PKV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
