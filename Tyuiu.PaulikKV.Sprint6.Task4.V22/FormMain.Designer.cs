@@ -39,10 +39,10 @@ namespace Tyuiu.PaulikKV.Sprint6.Task4.V22
             this.groupBoxCondition_PKV = new System.Windows.Forms.GroupBox();
             this.textBoxTask_PKV = new System.Windows.Forms.TextBox();
             this.groupBoxInput_PKV = new System.Windows.Forms.GroupBox();
-            this.labelStart_PKV = new System.Windows.Forms.Label();
-            this.labelStop_PKV = new System.Windows.Forms.Label();
-            this.textBoxStartValue_PKV = new System.Windows.Forms.TextBox();
             this.textBoxStopValue_PKV = new System.Windows.Forms.TextBox();
+            this.textBoxStartValue_PKV = new System.Windows.Forms.TextBox();
+            this.labelStop_PKV = new System.Windows.Forms.Label();
+            this.labelStart_PKV = new System.Windows.Forms.Label();
             this.groupBoxOutput_PKV = new System.Windows.Forms.GroupBox();
             this.textBoxResult_PKV = new System.Windows.Forms.TextBox();
             this.chartFunction_PKV = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -124,14 +124,19 @@ namespace Tyuiu.PaulikKV.Sprint6.Task4.V22
             this.groupBoxInput_PKV.TabStop = false;
             this.groupBoxInput_PKV.Text = "Ввод данных";
             // 
-            // labelStart_PKV
+            // textBoxStopValue_PKV
             // 
-            this.labelStart_PKV.AutoSize = true;
-            this.labelStart_PKV.Location = new System.Drawing.Point(7, 19);
-            this.labelStart_PKV.Name = "labelStart_PKV";
-            this.labelStart_PKV.Size = new System.Drawing.Size(64, 13);
-            this.labelStart_PKV.TabIndex = 0;
-            this.labelStart_PKV.Text = "Старт шага";
+            this.textBoxStopValue_PKV.Location = new System.Drawing.Point(141, 36);
+            this.textBoxStopValue_PKV.Name = "textBoxStopValue_PKV";
+            this.textBoxStopValue_PKV.Size = new System.Drawing.Size(100, 20);
+            this.textBoxStopValue_PKV.TabIndex = 3;
+            // 
+            // textBoxStartValue_PKV
+            // 
+            this.textBoxStartValue_PKV.Location = new System.Drawing.Point(6, 36);
+            this.textBoxStartValue_PKV.Name = "textBoxStartValue_PKV";
+            this.textBoxStartValue_PKV.Size = new System.Drawing.Size(100, 20);
+            this.textBoxStartValue_PKV.TabIndex = 2;
             // 
             // labelStop_PKV
             // 
@@ -142,19 +147,14 @@ namespace Tyuiu.PaulikKV.Sprint6.Task4.V22
             this.labelStop_PKV.TabIndex = 1;
             this.labelStop_PKV.Text = "Конец шага";
             // 
-            // textBoxStartValue_PKV
+            // labelStart_PKV
             // 
-            this.textBoxStartValue_PKV.Location = new System.Drawing.Point(6, 36);
-            this.textBoxStartValue_PKV.Name = "textBoxStartValue_PKV";
-            this.textBoxStartValue_PKV.Size = new System.Drawing.Size(100, 20);
-            this.textBoxStartValue_PKV.TabIndex = 2;
-            // 
-            // textBoxStopValue_PKV
-            // 
-            this.textBoxStopValue_PKV.Location = new System.Drawing.Point(141, 36);
-            this.textBoxStopValue_PKV.Name = "textBoxStopValue_PKV";
-            this.textBoxStopValue_PKV.Size = new System.Drawing.Size(100, 20);
-            this.textBoxStopValue_PKV.TabIndex = 3;
+            this.labelStart_PKV.AutoSize = true;
+            this.labelStart_PKV.Location = new System.Drawing.Point(7, 19);
+            this.labelStart_PKV.Name = "labelStart_PKV";
+            this.labelStart_PKV.Size = new System.Drawing.Size(64, 13);
+            this.labelStart_PKV.TabIndex = 0;
+            this.labelStart_PKV.Text = "Старт шага";
             // 
             // groupBoxOutput_PKV
             // 
@@ -210,6 +210,7 @@ namespace Tyuiu.PaulikKV.Sprint6.Task4.V22
             this.Controls.Add(this.buttonHelp_PKV);
             this.Controls.Add(this.buttonSave_PKV);
             this.Controls.Add(this.buttonDone_PKV);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
